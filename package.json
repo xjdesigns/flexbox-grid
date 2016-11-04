@@ -1,0 +1,26 @@
+{
+  "name": "CSS_Flexgrid",
+  "version": "1.0.0",
+  "description": "CSS Flexgrid using flexbox",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.5.1",
+    "gulp-watch": "^4.2.4",
+    "lodash": "^3.6.0",
+    "require-dir": "^0.3.0",
+    "browser-sync": "^2.6.4",
+    "gulp": "^3.8.11"
+  },
+  "devDependencies": {
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-sass": "^2.3.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Jacobson",
+  "license": "MIT"
+}

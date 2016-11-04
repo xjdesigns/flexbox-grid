@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<title>CSS Flexgrid</title>
+	<link rel="stylesheet" href="css/em-reset.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700|Exo+2:400,800|Titillium+Web:400,900|Roboto:100,300,400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/visual.css">
+	<link rel="stylesheet" href="css/prettify.css">
+	<link rel="stylesheet" href="css/flexgrid.css">
+</head>
+<body>
+
+	<header class="header">
+		<h1>Flexgrid</h1>
+		<p>by: Jason Jacobson</p>
+	</header>
+
+	<div class="hero-unit">
+		<h1>CSS FLEXBOX GRID</h1>
+		<p>The flexbox grid is built using the lastest spec and is backwards compatible to IE10.</p>
+	</div>
+
+	<div class="main-body">
+
+		<div class="flex">
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-8">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-3">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-3">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-3">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-3">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-10">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+
+<div class="wrap-desc">
+	<div class="flex">
+		<div class="flex__item--xs-5">
+<!-- LEAVE CODE SNIPPETS WITH NO INDENTATION -->
+<pre class="code-sample prettyprint">
+<div class="flex">
+	<div class="flex__item--xs-4"></div>
+	<div class="flex__item--xs-8"></div>
+</div>
+</pre>
+		</div>
+		<div class="flex__item--xs-7">
+			<p class="code-desc">The flex grid is built by default as 12 column. To customize the flexgrid, pull down the SASS files and inside <code>_flexgrid.scss</code> change the default variable. Along with the grid, if you need to have several different grids, simply pass in an array of integers. Then using a modifier class you can declare which grid. <code>class="flex flex--10"</code></p>
+		</div>
+	</div>
+</div>
+
+
+
+	</div> <!-- /main-body -->
+
+	<script src="js/functions.js"></script>
+	<script src="js/prettify.js"></script>
+	<script>
+		window.onload = (function() { prettyPrint(); });
+	</script>
+</body>
+</html>
