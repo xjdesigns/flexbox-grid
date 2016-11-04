@@ -10,6 +10,9 @@ method as you can namespace flexgrid to your liking.
 
 Run
 ```javascript
+npm install
+```
+```javascript
 gulp watch
 ```
 This will compile your sass and run the basic app for visual testing.
