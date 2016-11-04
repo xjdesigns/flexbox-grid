@@ -16,3 +16,6 @@ npm install
 gulp watch
 ```
 This will compile your sass and run the basic app for visual testing.
+```shell
+localhost:3000
+```
