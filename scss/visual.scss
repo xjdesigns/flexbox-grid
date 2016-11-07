@@ -28,8 +28,17 @@
 // VISUAL STYLES ONLY FOR PAGE VIEWING
 .main-body {
   max-width: 1140px;
-  margin: 0 auto;
-  padding: 48px 0;
+  margin: 48px auto;
+  padding: 48px;
+
+  &:not(:last-child) {
+    box-shadow: 0px 4px 12px -6px rgba(0,0,0,0.5);
+  }
+
+  .flex-title {
+    font-size: 1.7rem;
+    font-weight: 400;
+  }
 }
 .visual-inner-flex {
   background: blue;
@@ -37,6 +46,10 @@
   padding: 1em;
   border-radius: 12px;
   box-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+
+  &--height {
+    height: 120px;
+  }
 }
 .wrap-desc {
   margin: 24px 0;
@@ -52,7 +65,9 @@ code {
   padding: 3px 18px;
   font-size: .8em;
 }
-
+.code-sample {
+  word-wrap: break-word;
+}
 
 // PRETTY PRINT EXTENTION CODE RULES
 /*! Color themes for Google Code Prettify | MIT License | github.com/jmblog/color-themes-for-google-code-prettify */

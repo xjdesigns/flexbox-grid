@@ -14,7 +14,7 @@
 <body>
 
 	<header class="header">
-		<h1>Flexgrid</h1>
+		<h1>Indominus Flex</h1>
 		<p>by: Jason Jacobson</p>
 	</header>
 
@@ -23,7 +23,9 @@
 		<p>The flexbox grid is built using the lastest spec and is backwards compatible to IE10.</p>
 	</div>
 
-	<div class="main-body">
+	<div class="main-body" id="flex">
+
+		<h2 class="flex-title">Grid</h2>
 
 		<div class="flex">
 			<div class="flex__item--xs-4">
@@ -69,9 +71,151 @@
 	</div>
 </div>
 
+	</div> <!-- /main-body -->
 
+	<div class="main-body" id="flex-offset">
+
+		<h2 class="flex-title">Offset</h2>
+
+		<div class="flex">
+			<div class="flex__item--xs-2 flex__offset--xs-10">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-4 flex__offset--xs-8">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-8 flex__offset--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+
+<div class="wrap-desc">
+	<div class="flex">
+		<div class="flex__item--xs-12">
+<!-- LEAVE CODE SNIPPETS WITH NO INDENTATION -->
+<pre class="code-sample prettyprint">
+<div class="flex">
+	<div class="flex__item--xs-8 flex__offset--xs-4"></div>
+</div>
+</pre>
+		</div>
+	</div>
+</div>
 
 	</div> <!-- /main-body -->
+
+	<div class="main-body" id="flex-v-alignment">
+
+		<h2 class="flex-title">Vertical Alignment</h2>
+
+		<div class="flex flex--xs-middle">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex visual-inner-flex--height"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-6">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+		<div class="flex flex--xs-bottom">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex visual-inner-flex--height"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-6">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+
+<div class="wrap-desc">
+	<div class="flex">
+		<div class="flex__item--xs-12">
+<!-- LEAVE CODE SNIPPETS WITH NO INDENTATION -->
+<pre class="code-sample prettyprint">
+<div class="flex flex--xs-middle">
+	<div class="flex__item--xs-4"></div>
+	<div class="flex__item--xs-8"></div>
+</div>
+<div class="flex flex--xs-bottom">
+	<div class="flex__item--xs-4"></div>
+	<div class="flex__item--xs-8"></div>
+</div>
+</pre>
+		</div>
+	</div>
+</div>
+
+	</div> <!-- /main-body -->
+
+	<div class="main-body" id="flex-h-alignment">
+
+		<h2 class="flex-title">Horizontal Alignment</h2>
+
+		<div class="flex flex--xs-center">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+		<div class="flex flex--xs-end">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+		<div class="flex flex--xs-around">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+		<div class="flex flex--xs-between">
+			<div class="flex__item--xs-2">
+				<div class="visual-inner-flex"></div>
+			</div>
+			<div class="flex__item--xs-4">
+				<div class="visual-inner-flex"></div>
+			</div>
+		</div>
+
+<div class="wrap-desc">
+	<div class="flex">
+		<div class="flex__item--xs-12">
+<!-- LEAVE CODE SNIPPETS WITH NO INDENTATION -->
+<pre class="code-sample prettyprint">
+<div class="flex flex--xs-middle">
+	<div class="flex__item--xs-2"></div>
+	<div class="flex__item--xs-4"></div>
+</div>
+<div class="flex flex--xs-end">
+	<div class="flex__item--xs-2"></div>
+	<div class="flex__item--xs-4"></div>
+</div>
+<div class="flex flex--xs-around">
+	<div class="flex__item--xs-2"></div>
+	<div class="flex__item--xs-4"></div>
+</div>
+<div class="flex flex--xs-between">
+	<div class="flex__item--xs-2"></div>
+	<div class="flex__item--xs-4"></div>
+</div>
+</pre>
+		</div>
+	</div>
+</div>
+
+	</div> <!-- /main-body -->
+
 
 	<script src="js/functions.js"></script>
 	<script src="js/prettify.js"></script>

@@ -50,9 +50,6 @@ $break-xs: 20em; // 320
 
 @mixin flex-additional($bp) {
   .flex {
-    &--#{$bp}-inline-flex {
-      display: inline-flex;
-    }
     &--#{$bp}-flex-nowrap {
       flex-wrap: nowrap;
     }
