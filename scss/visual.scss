@@ -1,3 +1,9 @@
+///////////////////////////
+// IMPORT STYLESHEETS //
+///////////////////////////
+@import "base/var"; // all global variables should live here
+@import "base/base"; // base styling goes here
+
 // HEADER CODE
 .header {
   display: flex;
@@ -41,7 +47,7 @@
   }
 }
 .visual-inner-flex {
-  background: blue;
+  background: rebeccapurple;
   margin: 1em 0;
   padding: 1em;
   border-radius: 12px;
@@ -67,6 +73,50 @@ code {
 }
 .code-sample {
   word-wrap: break-word;
+}
+
+// CONTENT TILES
+.main-content {
+  display: flex;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.content-tile {
+  flex: 1;
+  margin: 24px;
+  padding: 48px 24px;
+  text-align: center;
+  box-shadow: 0px 4px 12px -6px rgba(0,0,0,0.5);
+
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+
+  .material-icons {
+    font-size: 7rem;
+    color: rebeccapurple;
+  }
+
+  p {
+    line-height: 1.7;
+  }
+}
+
+// FOOTER
+.footer {
+  background: black;
+  padding: 5vh 48px;
+  text-align: center;
+  color: white;
+  font-size: .75rem;
+
+  .material-icons {
+    vertical-align: middle;
+    color: rebeccapurple;
+  }
 }
 
 // PRETTY PRINT EXTENTION CODE RULES
