@@ -6,6 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
 	<title>CSS Flexgrid</title>
 	<link rel="stylesheet" href="css/em-reset.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/visual.css">
 	<link rel="stylesheet" href="css/prettify.css">
 	<link rel="stylesheet" href="css/flexgrid.css">
@@ -20,6 +21,23 @@
 	<div class="hero-unit">
 		<h1>CSS FLEXBOX GRID</h1>
 		<p>The flexbox grid is built using the lastest spec and is backwards compatible to IE10.</p>
+	</div>
+
+	<div class="main-content">
+		<div class="content-tile">
+			<i class="material-icons">aspect_ratio</i>
+			<p>Flexgrid offers many options ontop of it just being a standard column grid.</p>
+		</div>
+		<div class="content-tile">
+			<i class="material-icons">view_column</i>
+			<p>12 Column by default, but passing in multiple grid values you can extend with ease.</p>
+		</div>
+		<div class="content-tile">
+			<i class="material-icons">style</i>
+			<p>Written in BEM</p>
+			<p>Built with SASS</p>
+			<p>Maintained with CARE</p>
+		</div>
 	</div>
 
 	<div class="main-body" id="flex">
@@ -55,7 +73,7 @@
 
 <div class="wrap-desc">
 	<div class="flex">
-		<div class="flex__item--xs-12 flex__item--md-5">
+		<div class="flex__item--xs-5">
 <!-- LEAVE CODE SNIPPETS WITH NO INDENTATION -->
 <pre class="code-sample prettyprint">
 <div class="flex">
@@ -64,7 +82,7 @@
 </div>
 </pre>
 		</div>
-		<div class="flex__item--xs-12 flex__item--md-7">
+		<div class="flex__item--xs-7">
 			<p class="code-desc">The flex grid is built by default as 12 column. To customize the flexgrid, pull down the SASS files and inside <code>_flexgrid.scss</code> change the default variable. Along with the grid, if you need to have several different grids, simply pass in an array of integers. Then using a modifier class you can declare which grid. <code>class="flex flex--10"</code></p>
 		</div>
 	</div>
@@ -214,6 +232,13 @@
 </div>
 
 	</div> <!-- /main-body -->
+
+	<footer class="footer">
+		<div>
+			<p>Flexgrid is made with <i class="material-icons">favorite</i> for everyone to use.</p>
+			<p>Use, fork, contribute, all is welcome.</p>
+		</div>
+	</footer>
 
 
 	<script src="js/functions.js"></script>
