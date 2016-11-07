@@ -34,3 +34,21 @@ gulp.task('sass', function () {
     .pipe(gulp.dest('./css'))
     .pipe(browserSync.reload({stream:true}));
 });
+
+gulp.task('finish', function () {
+  var settings = _.extend({
+    outputStyle: 'compressed'
+  });
+
+  return gulp.src([
+    './scss/**/*.{sass,scss}',
+    '!./scss/{em-reset.scss,visual.scss}'
+    ])
+    .pipe(plumber(plumberSettings))
+    .pipe(sass(settings))
+    .pipe(autoprefixer({ browsers: ['> 1%', 'last 4 versions', 'Firefox ESR', 'Opera 12.1'] }))
+    .pipe(size({
+      showFiles: true
+    }))
+    .pipe(gulp.dest('./flexgrid'))
+});

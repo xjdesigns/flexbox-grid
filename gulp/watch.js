@@ -16,7 +16,4 @@ gulp.task('watch', ['sass', 'html'], function () {
     watch('./*.html', function(){
       gulp.start('html');
     });
-    /*watch(config.images.src, function(){
-      gulp.start('images');
-    })*/
 });
