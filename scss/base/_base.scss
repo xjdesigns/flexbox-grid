@@ -28,5 +28,7 @@ body {
 	min-height: 100vh;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+  -webkit-tex-size-adjust: 100%;
+  -moz-tex-size-adjust: 100%;
 	-webkit-tap-highlight-color: rgba(0,0,0,0); // bootstrap 4.0 credit
 }

@@ -21,13 +21,18 @@
 .hero-unit {
   background: linear-gradient(to bottom, rgba(0,0,0,0.8), rgba(0,0,0,0.9));
   color: white;
-  padding: 12vh 0;
+  padding: 12vh 12px;
   text-align: center;
 
   h1 {
-    font: normal 300 3rem/1 'helvetica';
+    font: normal 300 2rem/1 'helvetica';
     text-transform: uppercase;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    margin-bottom: 12px;
+
+    @media(min-width: 44.0625em) {
+      font-size: 3rem;
+    }
   }
 }
 
@@ -73,26 +78,41 @@ code {
 }
 .code-sample {
   word-wrap: break-word;
+  font-size: .75rem;
+  margin-bottom: 12px;
+
+  @media(min-width: 44.0625em) {
+    font-size: 1rem;
+  }
 }
 
 // CONTENT TILES
 .main-content {
-  display: flex;
+  display: block;
   max-width: 1140px;
   margin: 0 auto;
+
+  @media(min-width: 44.0625em) {
+    display: flex;
+    flex-flow: wrap row;
+  }
 }
 .content-tile {
-  flex: 1;
-  margin: 24px;
+  flex: 1 0 auto;
   padding: 48px 24px;
   text-align: center;
   box-shadow: 0px 4px 12px -6px rgba(0,0,0,0.5);
 
-  &:first-child {
-    margin-left: 0;
-  }
-  &:last-child {
-    margin-right: 0;
+  @media(min-width: 44.0625em) {
+    flex: 1;
+    margin: 24px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .material-icons {
@@ -101,6 +121,7 @@ code {
   }
 
   p {
+    word-wrap: break-word;
     line-height: 1.7;
   }
 }
